@@ -1,0 +1,67 @@
+[
+    {
+        "hint": [
+            "使用 shape, ndim 和 size"
+           ],
+           "answer":[
+            "import numpy as np\n",
+            "a = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])\n",
+            "print(a)\n",
+            "print(a.shape)\n",
+            "print(a.ndim)\n",
+            "print(a.size)\n"
+           ]
+    },
+        {
+        "hint": [
+            "使用 arange 和 reshape"
+           ],
+           "answer":[
+                "import numpy as np\n",
+                "Z = np.arange(9).reshape(3,3)\n",
+                "print(Z)\n"
+           ]
+    },
+            {
+        "hint": [
+            "数组与标量相加，相当于数组的每个元素加上这个标量"
+           ],
+           "answer":[
+                "import numpy as np\n",
+                "a = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])\n",
+                "print(a+1)\n"
+           ]
+    },
+    {
+        "hint": [
+            "使用 mat() 创建 matrix 矩阵"
+           ],
+           "answer":[
+            "import numpy as np\n",
+            "a = np.mat([[1, 2],[3, 4]])\n",
+            "b = np.mat([[5, 6],[7, 8]])\n",
+            "print(a*b)\n"
+           ]
+    },
+        {
+        "hint": [
+            "使用np.random.random()创建随机向量，使用 mean()计算平均值"
+           ],
+           "answer":[
+                "import numpy as np\n",
+                "Z = np.random.random(30)\n",
+                "m = Z.mean()\n",
+                "print(m)\n"
+           ]
+    },
+            {
+        "hint": [
+            "使用np.all"
+           ],
+           "answer":[
+                "import numpy as np\n",
+                "a = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])\n",
+                "print(np.all(a > 0))\n"
+           ]
+    }
+]

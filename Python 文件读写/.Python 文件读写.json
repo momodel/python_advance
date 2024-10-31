@@ -1,0 +1,51 @@
+[
+    {
+        "hint": [
+            "仿照 seek 移动到文件中的某个位置"
+           ],
+           "answer":[
+            "f = open('number.txt', 'w+')\n",
+            "for i in range(10):\n",
+            "    f.write(str(i))\n",
+            "f.seek(6)\n",
+            "print(f.read())\n",
+            "f.close()\n"
+                ]
+    },
+        {
+        "hint": [
+            "仿照上面的try except finally 的写法即可"
+           ],
+           "answer":[
+              "f = open('number.txt','w')\n",
+              "try:\n",
+              "    for i in range(10):\n",
+              "        f.write(str(i))\n",
+              "except Exception:\n",
+              "    print('写入失败')\n",
+              "finally:\n",
+              "    f.close()\n"
+                ]
+    },
+        {
+        "hint": [
+            "参考with open('number.txt','w') as f:"
+           ],
+           "answer":[
+              "with open('number.txt','w') as f:\n",
+              "    for i in range(10):\n",
+              "        f.write(str(i))\n"
+                ]
+    },
+        {
+        "hint": [
+            "使用 with open 和 csv.writer"
+           ],
+           "answer":[
+              "data = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]\n",
+              "with open('number.csv', 'w') as fp:\n",
+              "    w = csv.writer(fp)\n",
+              "    w.writerows(data)\n"
+                ]
+    }
+]

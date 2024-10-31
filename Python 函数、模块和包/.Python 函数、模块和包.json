@@ -1,0 +1,52 @@
+[
+    {
+        "hint": [
+            "仿照 add 函数编写即可"
+           ],
+           "answer":[
+            "def minus(x, y):\n",
+"    a = x - y\n",
+"    return a\n"
+                ]
+    },
+        {
+        "hint": [
+            "参考 add 函数的调用方法"
+           ],
+           "answer":[
+              "print(minus(3, 2))\n"
+                ]
+    },
+        {
+        "hint": [
+            "只需将 b=0 改为 b=3 即可"
+           ],
+           "answer":[
+              "def quad(x, a=1, b=3, c=0):\n",
+              "    return a*x**2 + b*x + c\n"
+                ]
+    },
+        {
+        "hint": [
+            "参考 add 函数的编写方法"
+           ],
+           "answer":[
+              "def add(x, **kwargs):\n",
+              "    total = x\n",
+              "    for arg, value in kwargs.items():\n",
+              "        print('minusing %s=%s'%(arg,value))\n",
+              "        total -= value\n",
+              "    return total\n"
+                ]
+    },
+        {
+        "hint": [
+            "先编写一个计算平方的函数，然后使用 map 即可"
+           ],
+           "answer":[
+              "def square(x) : \n",
+              "    return x ** 2\n",
+              "print(list(map(square, [1,2,3,4,5])))\n"
+                ]
+    }
+]

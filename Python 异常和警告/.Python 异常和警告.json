@@ -1,0 +1,17 @@
+[
+        {
+        "hint": [
+            "使用 LookupError"
+           ],
+           "answer":[
+              "dict1 = {'a': 1, 'b': 2, 'v': 22}\n",
+"key = input('请输入 key：')\n",
+"try:\n",
+"    x = dict1[key]\n",
+"except LookupError:\n",
+"    print('查询错误')\n",
+"else:\n",
+"    print(x)\n"
+                ]
+    }
+]

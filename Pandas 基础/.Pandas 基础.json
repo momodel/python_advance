@@ -1,0 +1,58 @@
+[
+    {
+        "hint": [
+            "使用 head()"
+           ],
+           "answer":[
+          "df.head(2)\n"
+                ]
+    },
+        {
+        "hint": [
+            "用 sort_values() 并调整 ascending 参数"
+           ],
+           "answer":[
+          "df.sort_values(by='A', ascending=False)\n"
+                ]
+    },
+            {
+        "hint": [
+            "请参考上方获取单列数据及布尔索引的相关知识"
+           ],
+           "answer":[
+          "df[df.A > -1].B\n"
+                ]
+    },
+            {
+        "hint": [
+            "使用 sum()"
+           ],
+           "answer":[
+          "df['B'].sum()\n"
+                ]
+    },
+            {
+        "hint": [
+            "使用 df[df[属性值]>某个值] 进行筛选"
+           ],
+           "answer":[
+          "df_test[df_test['age'] > 3]\n"
+                ]
+    },
+            {
+        "hint": [
+            "iloc 内也可以使用类似切片的方法 "
+           ],
+           "answer":[
+          "df_test.iloc[:3]\n"
+                ]
+    },
+                {
+        "hint": [
+            "使用 sum "
+           ],
+           "answer":[
+          "df_test['visits'].sum()\n"
+                ]
+    }
+]

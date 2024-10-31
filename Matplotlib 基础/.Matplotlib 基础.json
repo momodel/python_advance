@@ -1,0 +1,62 @@
+[
+    {
+        "hint": [
+            "使用 plt.plot 绘制"
+           ],
+           "answer":[
+              "import matplotlib.pyplot as plt\n",
+              "from numpy import *\n",
+              "%matplotlib inline\n",
+              "x = linspace(0, 2 * pi, 50)\n",
+              "plt.plot(x, sin(x), 'b', x, sin(2 * x), 'r', x, sin(3 * x), 'y');\n"
+                ]
+    },
+
+        {
+        "hint": [
+            "使用参数 marker='^', color='r'"
+           ],
+           "answer":[
+                "import matplotlib.pyplot as plt\n",
+                "x = linspace(0, 10, 30)\n",
+                "plt.scatter(x, sin(x), marker='^', color='r');\n"
+                ]
+    },
+
+            {
+        "hint": [
+            "使用 subplot "
+           ],
+           "answer":[
+                "fig = plt.figure()\n",
+                "plt.subplot(2, 1, 1)\n",
+                "plt.plot(x)\n",
+                "plt.subplot(2, 1, 2)\n",
+                "plt.plot(y);\n"
+                ]
+    },
+
+    {
+        "hint": [
+            "使用 xlabel, ylabel, title, grid"
+           ],
+           "answer":[
+              "plt.plot(x, cos(x))\n",
+              "plt.xlabel('radians')\n",
+              "plt.ylabel('amplitude', fontsize='large')\n",
+              "plt.title('Cos(x)')\n",
+              "plt.grid();\n"
+                ]
+    },
+
+    {
+        "hint": [
+            "可参考 https://matplotlib.org/3.3.2/gallery/pie_and_polar_charts/pie_features.html#sphx-glr-gallery-pie-and-polar-charts-pie-features-py"
+           ],
+           "answer":[
+"labels = [u'苹果',u'香蕉',u'葡萄'] #定义标签\n",
+"sizes = [100,200,250,] #每块值\n",
+"plt.pie(sizes, labels=labels, autopct = '%3.2f%%');\n"
+                ]
+    }
+]
